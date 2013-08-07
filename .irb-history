@@ -1,0 +1,50 @@
+touch("all button")[0]
+touch("all button")
+touch("all button")
+query("all button")
+query("all view")
+touch("all id:'book.png'")
+touch("all view id:'book.png'")
+touch("all view id:'book.png'")
+touch("all view id:'book.png'")
+touch("all view label:'book.png'")
+touch("all label:'book.png'")
+touch("view label:'book.png'")
+touch("view id:'book.png'")
+touch("all view id:'book.png'")
+query("all Button")
+query("all visible Button")
+query("all button label'plusSign'")
+touch("all view marked:'plusSign'")
+touch("all view marked:'plusSign'").first
+query("all view marked:'plusSign'").first
+query("all view marked:'plusSign'").first['class']
+class("view")
+classes("view")
+classes("view")
+query("BookFrontView@)
+query("BookFrontView@)
+query("BookFrontView@)
+@
+"
+"
+query("BookFrontView")
+query("view BookFrontView")
+query("class:BookFrontView")
+label("view")
+query("label:'bookWithRibbon.png'")
+query("all label:'bookWithRibbon.png'")
+query("all view label:'bookWithRibbon.png'")
+query("all label marked:'bookWithRibbon.png'")
+tap "plusSign"
+label("view")
+tap "bookWithRibbon.png"
+tap "homeRibbon"
+tap "bookWithRibbon.png"
+tap "homeRibbon"
+tap "homeRibbon"
+label("view")
+query("all button")
+query("all button")[0]
+touch("all button")[0]
+exit

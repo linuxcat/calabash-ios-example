@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'DollarBets' target in the 'DollarBets' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>   
+    #import <QuartzCore/QuartzCore.h>
+    #import "NSDate+RK.h"
+#endif
+
+#define HEITI @"STHeitiJ-Light"
+#define HEITI_MEDIUM @"STHeitiJ-Medium" 
+#define RGB256_TO_COL(col) ((col) / 255.0f)
