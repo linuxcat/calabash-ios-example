@@ -25,11 +25,13 @@ class BetAppUi
   end
 
   def is_bet_screen?
-    return query('Label')[1]['label'] == 'Bets'
+    if query("Label label marked:'Table Of'").count == 1
+      return true
+    end
   end
 
-  def get_bets
-
+  def get_no_of_bets
+    return query('TableViewCell').count
   end
 
   def close_bet_book
