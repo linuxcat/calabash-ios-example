@@ -9,7 +9,7 @@ class IosHelper
 
   def self.delete_characters(character_length)
     character_length.times do
-      Calabash::Cucumber::KeyboardHelpers.keyboard_enter_char 'Delete'
+      Calabash::Cucumber::KeyboardHelpers::keyboard_enter_char 'Delete'
     end
   end
 
