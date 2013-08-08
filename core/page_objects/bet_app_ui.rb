@@ -5,7 +5,6 @@ class BetAppUi
   # To change this template use File | Settings | File Templates.
   include Calabash::Cucumber::Operations
 
-
   def open_bet_book
     tap('bookWithRibbon.png')
     wait_for_none_animating
