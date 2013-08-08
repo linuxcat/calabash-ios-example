@@ -8,7 +8,6 @@ class BetAppUi
 
   def open_bet_book
     tap('bookWithRibbon.png')
-    wait_for_none_animating
     wait_for_elements_exist(["ImageView id:'plusSign'"], :timeout => 5)
   end
 
