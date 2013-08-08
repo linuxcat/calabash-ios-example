@@ -17,8 +17,14 @@ class BetAppUi
   end
 
   def make_bet(bet_amount, description)
+    puts "debug 1"
     tap('plusSign')
+
+    puts "debug 2"
+
     wait_for_elements_exist(["Button marked:'paperPlusSign'"], :timeout => 5)
+    puts "debug 3"
+
     tap('paperPlusSign')
 
     10.times do
