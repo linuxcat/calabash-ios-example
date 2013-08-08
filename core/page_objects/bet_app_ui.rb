@@ -13,12 +13,12 @@ class BetAppUi
   def open_bet_book
     tap('bookWithRibbon.png')
     wait_for_none_animating
-    wait_for_elements_exist(["ImageView id:'plusSign'"], :timeout => 20)
+    wait_for_elements_exist(["ImageView id:'plusSign'"], :timeout => 5)
   end
 
   def make_bet(bet_amount, description)
     tap('plusSign')
-    wait_for_elements_exist('paperPlusSign')
+    wait_for_elements_exist(["Button marked:'paperPlusSign'"], :timeout => 5)
     tap('paperPlusSign')
 
     10.times do
