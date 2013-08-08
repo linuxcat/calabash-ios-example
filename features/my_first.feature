@@ -1,9 +1,9 @@
-Feature: Running a test
-  As an iOS developer
-  I want to have a sample feature file
-  So I can begin testing quickly
+Feature: Adding bets
+  As an gamble with a problem
+  I want to be able to track my bets through the app
+  So I can keep track of my gambling debts
 
-Scenario: Example steps
+Scenario: Adding a bet
   Given I am on the Welcome Screen
   When I tap the bet book
   Then the book opens and I am taken to the bet page
