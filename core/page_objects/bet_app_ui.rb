@@ -21,6 +21,7 @@ class BetAppUi
     tap('Amount ')
     keyboard_enter_text(bet_amount)
     tap 'Done'
+    tap 'tableOfContentsBackButton'
   end
 
   def is_bet_screen?
