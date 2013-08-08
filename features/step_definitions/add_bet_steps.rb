@@ -6,7 +6,7 @@ end
 
 Then(/^the book opens and I am taken to the bet page$/) do
   bet.is_bet_screen?.should == true
-  puts "my current bets are:#{@current_bets}"
+  @current_bets = bet.get_no_of_bets
 end
 
 When(/^I add a new bet for \$(\d+) and click the save button$/) do |arg|
