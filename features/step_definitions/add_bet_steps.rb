@@ -17,5 +17,5 @@ end
 Then(/^The bet is added to my bet book$/) do
   bet.is_bet_screen? == true
   puts bet.get_no_of_bets
-  bet.get_no_of_bets == @current_bets
+  bet.get_no_of_bets.should == @current_bets
 end
