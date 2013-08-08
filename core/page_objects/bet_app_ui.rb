@@ -27,8 +27,11 @@ class BetAppUi
 
     tap('paperPlusSign')
 
+    puts "debug 3"
+
     10.times do
       keyboard_enter_char 'Delete'
+      puts "debug it"
     end
 
     keyboard_enter_text(description)
