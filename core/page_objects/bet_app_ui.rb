@@ -11,7 +11,7 @@ class BetAppUi
 
 
   def open_bet_book
-    touch('bookWithRibbon.png')
+    tap('bookWithRibbon.png')
     wait_for_elements_exist('homeRibbon.png')
   end
 
