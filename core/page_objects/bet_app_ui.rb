@@ -12,7 +12,7 @@ class BetAppUi
 
   def open_bet_book
     tap('bookWithRibbon.png')
-    wait_for_elements_exist('homeRibbon.png')
+    wait_for_transition(done)
   end
 
   def make_bet(bet_amount, description)
