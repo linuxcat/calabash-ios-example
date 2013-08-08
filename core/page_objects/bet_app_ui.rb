@@ -3,7 +3,7 @@ require 'calabash-cucumber'
 
 class BetAppUi
   # To change this template use File | Settings | File Templates.
-
+  include Calabash::Cucumber::Operations
   def initialize
 
   end
