@@ -12,7 +12,8 @@ class BetAppUi
 
   def open_bet_book
     tap('bookWithRibbon.png')
-    wait_for_elements_exist(["ImageView id:'plusSign'"], :timeout => 5)
+    wait_for_none_animating
+    wait_for_elements_exist(["ImageView id:'plusSign'"], :timeout => 20)
   end
 
   def make_bet(bet_amount, description)
@@ -26,7 +27,7 @@ class BetAppUi
 
     keyboard_enter_text(description)
     tap('Amount ')
-    keyboard_enter_text('5')
+    keyboard_enter_text(bet_amount)
     tap 'Done'
   end
 
