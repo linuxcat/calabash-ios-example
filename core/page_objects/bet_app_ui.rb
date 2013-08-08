@@ -17,21 +17,11 @@ class BetAppUi
   end
 
   def make_bet(bet_amount, description)
-    puts "debug 1"
     tap('plusSign')
-
-    puts "debug 2"
-
     wait_for_elements_exist(["Button marked:'paperPlusSign'"], :timeout => 5)
-    puts "debug 3"
-
     tap('paperPlusSign')
-
-    puts "debug 3"
-
-    10.times do
+    15.times do
       keyboard_enter_char 'Delete'
-      puts "debug it"
     end
 
     keyboard_enter_text(description)
