@@ -1,13 +1,9 @@
-require 'calabash-cucumber'
+require_relative '../helpers/ios_helper'
 
 
 class BetAppUi
   # To change this template use File | Settings | File Templates.
   include Calabash::Cucumber::Operations
-  def initialize
-
-  end
-
 
 
   def open_bet_book
@@ -20,14 +16,12 @@ class BetAppUi
     tap('plusSign')
     wait_for_elements_exist(["Button marked:'paperPlusSign'"], :timeout => 5)
     tap('paperPlusSign')
-    15.times do
-      keyboard_enter_char 'Delete'
-    end
-
+    IosHelper.delete_characters(15)
     keyboard_enter_text(description)
     tap('Amount ')
     keyboard_enter_text(bet_amount)
     tap 'Done'
+    sleep 10
   end
 
   def is_bet_screen?
