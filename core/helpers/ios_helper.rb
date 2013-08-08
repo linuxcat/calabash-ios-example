@@ -2,8 +2,9 @@ require 'calabash-cucumber'
 
 class IosHelper
   # To change this template use File | Settings | File Templates.
-
-  include Calabash::Cucumber::Operations
+  def self.initialize
+    include Calabash::Cucumber::Operations
+  end
 
   def self.delete_characters(character_length)
     character_length.times do
