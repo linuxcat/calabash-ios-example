@@ -15,8 +15,8 @@ end
 Then(/^I can enter a new bet$/) do
 end
 
-When(/^I add a new bet for $(\d+) and click the save button$/) do |arg|
-  bet.make_bet(5, "Adding my bet")
+When(/^I add a new bet for \$(\d+) and click the save button$/) do |arg|
+  bet.make_bet(arg, "Adding my bet")
 end
 
 Then(/^The bet is added to my bet book$/) do
