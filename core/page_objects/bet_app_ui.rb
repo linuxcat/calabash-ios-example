@@ -16,7 +16,7 @@ class BetAppUi
     tap('plusSign')
     wait_for_elements_exist(["Button marked:'paperPlusSign'"], :timeout => 5)
     tap('paperPlusSign')
-    delete_characters(15)
+    clear_form_text
     keyboard_enter_text(description)
     tap('Amount ')
     keyboard_enter_text(bet_amount)
@@ -33,11 +33,5 @@ class BetAppUi
   def get_no_of_bets
     return query('TableViewCell').count
   end
-
-  def close_bet_book
-
-  end
-
-
 
 end
